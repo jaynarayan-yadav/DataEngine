@@ -91,7 +91,7 @@ class PreCleaningReport:
         """
         lines = [
             "===========================================================",
-            "             CLEANFRAME PRE-CLEANING DIAGNOSIS             ",
+            "             DATA ENGINE PRE-CLEANING DIAGNOSIS             ",
             "===========================================================",
             f"Dataset Dimensions:    {self.initial_shape[0]} rows x {self.initial_shape[1]} columns",
             f"Estimated Memory:      {self.memory_usage_str}",

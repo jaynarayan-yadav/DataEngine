@@ -104,7 +104,7 @@ def test_report_and_summary(dirty_dataframe):
 
     # Test text summary
     summary_text = cleaner.summary()
-    assert "CLEANFRAME CLEANING REPORT" in summary_text
+    assert "DATA ENGINE CLEANING REPORT" in summary_text
     assert "Duplicate Rows" in summary_text
 
     # Test HTML representation for Jupyter notebooks

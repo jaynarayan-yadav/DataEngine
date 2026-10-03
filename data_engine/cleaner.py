@@ -806,7 +806,7 @@ class DataFrameCleaner:
         """
         src = Path(filepath)
         if not src.exists():
-            raise FileNotFoundError(f"CleanFrame model file not found: {src}")
+            raise FileNotFoundError(f"DataEngine model file not found: {src}")
         with open(src, "rb") as f:
             obj = pickle.load(f)
         if not isinstance(obj, cls):

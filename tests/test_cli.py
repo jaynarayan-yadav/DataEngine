@@ -25,7 +25,7 @@ def test_cli_preview(temp_csv, capsys):
     code = main([str(temp_csv), "--preview"])
     assert code == 0
     captured = capsys.readouterr().out
-    assert "CLEANFRAME PRE-CLEANING DIAGNOSIS" in captured
+    assert "DATA ENGINE PRE-CLEANING DIAGNOSIS" in captured
     assert "PROPOSED CLEANING BLUEPRINT" in captured
     assert "[Preview mode]" in captured
 

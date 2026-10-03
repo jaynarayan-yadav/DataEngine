@@ -53,7 +53,7 @@ def test_diagnostics_summary_output(dirty_sample_df):
     report = diagnose_dataframe(dirty_sample_df, display=False)
     text = report.summary()
 
-    assert "CLEANFRAME PRE-CLEANING DIAGNOSIS" in text
+    assert "DATA ENGINE PRE-CLEANING DIAGNOSIS" in text
     assert "12 rows x 7 columns" in text
     assert "Duplicate Rows:" in text
     assert "MISSING VALUES BREAKDOWN:" in text

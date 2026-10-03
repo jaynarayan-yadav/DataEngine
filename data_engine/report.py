@@ -78,7 +78,7 @@ class CleaningReport:
         """Return a formatted text summary of the cleaning process."""
         lines = [
             "===========================================================",
-            "                  CLEANFRAME CLEANING REPORT               ",
+            "                  DATA ENGINE CLEANING REPORT               ",
             "===========================================================",
             f"Shape:               {self.initial_shape} -> {self.final_shape}",
             f"Rows Changed:        {self.final_shape[0] - self.initial_shape[0]:+d} rows",
