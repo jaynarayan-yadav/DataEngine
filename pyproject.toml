@@ -1,0 +1,55 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "data-engine"
+version = "0.1.0"
+description = "Automated and manual data cleaning and preprocessing for pandas DataFrames"
+readme = "README.md"
+requires-python = ">=3.9"
+authors = [
+    { name = "Data Science Team", email = "datascience@example.com" }
+]
+keywords = [
+    "pandas",
+    "preprocessing",
+    "data-cleaning",
+    "data-science",
+    "feature-engineering",
+    "machine-learning",
+    "eda"
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Science/Research",
+    "Intended Audience :: Developers",
+    "Topic :: Scientific/Engineering :: Information Analysis",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3.14",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "pandas>=2.0.0",
+    "numpy>=1.24.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0.0",
+]
+
+[project.scripts]
+data-engine = "data_engine.cli:main"
+data_engine = "data_engine.cli:main"
+
+
+[tool.pytest.ini_options]
+minversion = "7.0"
+testpaths = ["tests"]
+python_files = ["test_*.py"]

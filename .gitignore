@@ -1,0 +1,69 @@
+﻿# ── Python ────────────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+*.pyd
+
+# ── Distribution / packaging ──────────────────────────────────────────────────
+*.egg-info/
+*.egg
+dist/
+build/
+wheels/
+sdist/
+MANIFEST
+
+# ── Virtual environments ───────────────────────────────────────────────────────
+.venv/
+venv/
+env/
+ENV/
+.env
+
+# ── Testing & coverage ────────────────────────────────────────────────────────
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+coverage.xml
+
+# ── Type checking ─────────────────────────────────────────────────────────────
+.mypy_cache/
+.pytype/
+.pyre/
+
+# ── Jupyter notebooks — strip checkpoints only, keep .ipynb source files ──────
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/
+
+# ── Saved model / pipeline artefacts (user-generated, not source code) ────────
+*.pkl
+*.pickle
+*.joblib
+
+# ── Data files (keep examples/dirty_data.csv and examples/cleaned_data.csv) ───
+# Ignore loose CSVs/Excel/Parquet dropped at the project root.
+/*.csv
+/*.xlsx
+/*.parquet
+/*.json
+
+# ── IDE and editor files ──────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# ── Logs and temporary files ──────────────────────────────────────────────────
+*.log
+*.tmp
+*.bak
+
+# ── Examples directory: keep EVERYTHING ───────────────────────────────────────
+# All files under examples/ are intentional demo content. Must be committed.
+!examples/
+!examples/**
